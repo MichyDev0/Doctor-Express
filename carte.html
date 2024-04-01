@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/site_projet/img/logobien.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="carte.css">
+  <title>Carte & emplacement du Bus</title>
+</head>
+
+<body>
+  <header>
+    <!-- On met une navbar pour que tous les élèments soient disposer sur la même ligne dans le header -->
+    <nav class="navbar">
+      <img src="img/logobien.png" class="logo">
+      <h1>Doctor'Express</h1>
+      <ol>
+        <li class="element"><a href="index.html">Accueil</a></li>
+
+        <li class="element"><a href="carte.html">Carte</a></li>
+
+        <li class="element"><a href="formulaire.html">Formulaire</a></li>
+
+        <li class="element"><a href="savoir.html">A propos de nous</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <!-- Mise en place d'un titre ainsi au centre afin de décrire l'utilité de la page -->
+    <h3 id="cTitre">Jours et horaires de passage du bus Doctor'Express dans vos villes en Ariège</h3>
+    <div class="Texte">
+      <p id="cTextTitre">Voici une carte avec l'emplacement du bus selon le jour :</p>
+    </div>
+    <!-- Mise en place de la capture d'écran de la carte fourni par le client -->
+    <div class="Carte"><img src="img/carte.png"></div>
+    <!-- Création d'un tableau afin d'indiquer les lieux et les horaires de l'emplacement du bus -->
+    <div class="cTableau">
+      <table border=1 cellspacing=0 cellpadding=5>
+        <caption>Horaires et lieux de passages</caption>
+        <tr>
+          <td>Lundi</td>
+          <td>Mardi</td>
+          <td>Mercredi</td>
+          <td>Jeudi</td>
+          <td>Vendredi</td>
+        </tr>
+        <tr>
+          <td>Montjoie-en-Couserans</td>
+          <td>Saint-Lizier</td>
+          <td>Saint-Girons</td>
+          <td>Eycheil</td>
+          <td>Encourtiech</td>
+        </tr>
+        <tr>
+          <td>9h-20</td>
+          <td>9h-20</td>
+          <td>9h-20</td>
+          <td>9h-20</td>
+          <td>9h-20</td>
+        </tr>
+
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
+
+  <footer>
+
+    <ol>
+      <li class="element">
+        <a href="mailto:marchesinamandine@gmail.com/">
+          <img src="img/mail.svg">
+        </a>
+      </li>
+
+      <li class="element">
+        <img src="img/info.svg" onclick=ShowSiret()>
+      </li>
+      <script>
+        function ShowSiret() {
+          alert("Siret 182 200 077 00081");
+        }
+      </script>
+    </ol>
+  </footer>
+</body>
+
+</html>
