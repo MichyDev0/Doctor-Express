@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/site_projet/img/logobien.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="savoir.css">
+  <title>A Propos De Nous</title>
+</head>
+
+<body>
+  <!-- Tête du site -->
+  <header>
+
+    <nav class="navbar">
+      <img src="img/logobien.png" class="logo">
+      <h1>Doctor'Express</h1>
+      <ol>
+        <li class="element"><a href="index.html">Accueil</a></li>
+        <li class="element"><a href="carte.html">Carte</a></li>
+        <li class="element"><a href="formulaire.html">Formulaire</a></li>
+        <li class="element"><a href="savoir.html">A propos de nous</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Corps du site -->
+  <main>
+    <h3>A propos de nous</h3>
+    <div class="Infos">
+      <b>
+        <p>Adresse : St Girons, Ariège</p>
+        <p>Statut juridique : SARL</p>
+        <p>Siret : 182 200 077 00081</p>
+      </b>
+    </div>
+    <h4>Qui sommes-nous ?</h4>
+    <div class="TChef">
+      <p>Amandine M.</p>
+      <b><u>
+          <p>La digireante</p>
+        </u></b>
+      <img src="img/1.png" class="Chef">
+    </div>
+    <p class="TAssoc">Mes associés</p>
+    <ol class="assoc">
+      <img src="img/2.png" class="Associe1">
+      <img src="img/3.png" class="Associe2">
+      <img src="img/4.png" class="Associe3">
+    </ol>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
+  <!-- Pieds du site -->
+  <footer>
+    <!-- Pour constater les personne   -->
+    <ol>
+      <li class="element">
+        <a href="mailto:marchesinamandine@gmail.com/">
+          <img src="img/mail.svg">
+        </a>
+      </li>
+
+      <li class="element">
+        <img src="img/info.svg" onclick=ShowSiret()>
+      </li>
+      <script>
+        function ShowSiret() {
+          alert("Siret 182 200 077 00081");
+        }
+      </script>
+    </ol>
+  </footer>
+</body>
+
+</html>

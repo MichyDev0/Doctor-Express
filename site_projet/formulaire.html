@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Configuration du site -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/site_projet/img/logobien.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="formulare.css">
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <title>Formulaire </title>
+</head>
+
+<body>
+  <!-- nom du site avec la configuration pour allez aux autre site  -->
+  <div id="fBody">
+    <header>
+
+      <nav class="navbar">
+        <img src="img/logobien.png" class="logo">
+        <h1>Doctor'Express</h1>
+        <ol>
+          <li class="element"><a href="index.html">Accueil</a></li>
+
+          <li class="element"><a href="carte.html">Carte</a></li>
+
+          <li class="element"><a href="formulaire.html">Formulaire</a></li>
+
+          <li class="element"><a href="savoir.html">A propos de nous</a></li>
+
+        </ol>
+      </nav>
+    </header>
+    <!-- Création du formulaire pour prendre rendévous pour le site  -->
+    <main id="fMain">
+      <h2>Formulaire</h2>
+      <h3>Vous souhaitez nous contacter ? Remplissez le formulaire ci-dessous pour nous envoyer un message et nous vous
+        répondrons dans les plus brefs délais !</h3>
+      <div class='formContainer'>
+        <form>
+          <label for="fCivilite">Civilité</label>
+          <select id="fCivilite" name="civilite" required>
+            <option value="F">Madame</option>
+            <option value="H">Monsieur</option>
+          </select>
+
+          <label for="fNom">Nom</label>
+          <input type="text" id="fNom" name="nom" placeholder="Votre nom..." required>
+
+          <label for="fAdresse">Email</label>
+          <input type="email" id="fAdresse" name="Adresse" placeholder="Votre Email..." required>
+
+          <label for="fBus">Localité du Bus</label>
+          <select id="fBus" name="bus" required>
+            <option value="1">Encourtiech</option>
+            <option value="2">Eycheil</option>
+            <option value="3">Montjoie-en-Couserans</option>
+            <option value="4" selected="selected">St-Girons</option>
+            <option value="5">St-Lizier</option>
+          </select>
+
+          <label for="fMessage">Message</label>
+          <textarea id="message" name="fMessage" placeholder="Votre Message..." required></textarea>
+
+          <label for="fConnu">Comment avez vous connu Le Bus Médical ?</label>
+          <input type="text" id="fConnu" name="Connu" placeholder="Facultatif">
+
+
+          <input type="submit" value="Soumettre">
+
+          </fieldset>
+        </form>
+    </main>
+
+    <footer>
+      <!-- Pour constater les personne   -->
+      <ol>
+        <li class="element">
+          <a href="mailto:marchesinamandine@gmail.com/">
+            <img src="img/mail.svg">
+          </a>
+        </li>
+
+        <li class="element">
+          <img src="img/info.svg" onclick=ShowSiret()>
+        </li>
+        <script>
+          function ShowSiret() {
+            alert("Siret 182 200 077 00081");
+          }
+        </script>
+      </ol>
+    </footer>
+</body>
+
+</html>
